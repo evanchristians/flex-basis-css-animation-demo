@@ -1,0 +1,17 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "prettier": "@evanchristians/prettier",
+  "author": "Evan Christians <evanryk@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@evanchristians/prettier": "^1.0.0",
+    "serve": "^13.0.2"
+  }
+}

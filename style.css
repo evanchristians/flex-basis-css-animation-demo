@@ -1,0 +1,51 @@
+*,
+::before,
+::after {
+  /* cosmetic */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  /* cosmetic */
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+
+  /* cosmetic */
+  width: 400px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.card-container:hover .box,
+.card-container:hover .card {
+  flex-basis: 50%;
+}
+
+.box, .card {
+  transition: all .15s ease-in-out;
+
+  /* cosmetic */
+  height: 100px;
+}
+
+.card {
+  flex-basis: 50%;
+
+  /* cosmetic */
+  background: red;
+}
+
+.box {
+  flex-basis: 0%;
+
+  /* cosmetic */
+  background: black;
+}
