@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: monospace;
+}
+
 main {
   /* cosmetic */
   display: grid;
@@ -29,11 +33,20 @@ main {
   flex-basis: 50%;
 }
 
-.box, .card {
-  transition: all .15s ease-in-out;
+.box,
+.card {
+  transition: all 0.25s ease-in-out;
 
   /* cosmetic */
   height: 100px;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.box > p,
+.card > p {
+  padding: 1rem;
 }
 
 .card {
@@ -45,6 +58,8 @@ main {
 
 .box {
   flex-basis: 0%;
+  overflow: hidden;
+  white-space: nowrap;
 
   /* cosmetic */
   background: black;
